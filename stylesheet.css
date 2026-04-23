@@ -71,10 +71,15 @@ main {
     font-weight: bold;
 }
 
+.city {
+    width: 50%;
+    padding-right: 20px;
+}
+
 .city-image {
     margin-top: 30px;
-    padding-right: 30px;
-    width: 50%;
+    width: 100%;
     height: 300px;
+    object-fit: cover;
 }
 
