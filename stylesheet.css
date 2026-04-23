@@ -1,0 +1,80 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color:  #fffbf4;
+}
+
+.header-container {
+    width: 1180px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container h3 {
+    font-size: 40px;
+    color: black;
+    margin-right: 20px;
+    line-height: 80px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.city-link {
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+    font-family: 'Crimson Text', serif;
+    font-weight: normal;
+    text-decoration: none;
+    opacity: 0.6;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.city-link:hover {
+    text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
+    opacity: 1;
+    border-bottom: 2px solid black;
+}
+
+main {
+    background-color: #fffbf4;
+    height: 100%;
+}
+
+.main-container {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container h2 {
+    width: 100%;
+    font-size: 30px;
+    color: black;
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.city-image {
+    margin-top: 30px;
+    padding-right: 30px;
+    width: 50%;
+    height: 300px;
+}
+
