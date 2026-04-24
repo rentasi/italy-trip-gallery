@@ -108,17 +108,7 @@ nav ul {
     );
     transform: scaleX(0);
     transform-origin: center;
-}
-
-.city-link:hover::after {
     transition: transform 0.3s ease;
-    transform: scaleX(1);
-}
-
-.city-link.active::after {
-    transition: transform 0.1s ease;
-    transform: scaleX(1);
-
 }
 
 main {
