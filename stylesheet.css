@@ -107,12 +107,18 @@ nav ul {
         #CD212A 66.6%
     );
     transform: scaleX(0);
-    transform-origin: ceter;
-    transition: transform 0.3s ease;
+    transform-origin: center;
 }
 
 .city-link:hover::after {
+    transition: transform 0.3s ease;
     transform: scaleX(1);
+}
+
+.city-link.active::after {
+    transition: transform 0.1s ease;
+    transform: scaleX(1);
+
 }
 
 main {
