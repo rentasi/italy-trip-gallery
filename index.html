@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Italy Trip Gallery</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <header>
         <div class="header-container">
             <h1><a href="#top" class="header-title">Italy Trip Gallery</a></h1>
-            <nav class="cities">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="cities" class="nav-menu" id="nav-menu">
                 <ul>
                     <li><a href="#milano" class="city-link">MILANO</a></li>
                     <li><a href="#venice" class="city-link">VENICE</a></li>
@@ -69,4 +75,13 @@
         </div>
     </footer>
 </body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        navMenu.classList.toggle('active');
+    });
+</script>
 </html>
